@@ -20,15 +20,25 @@ In this dataset the images have been converted into a Python Dataframe. There ar
  
 
 ## MODEL 
-A summary of the model you’re using and why you chose it. 
+Used a LeNet5 CNN model based on the work of Yann LeCun. Consisting of Convolutional, Pooling and Fully connected layers with ReLU activation functions. As this was a project using images I chose to use a CNN (Convolutional Neural Network for this project.
+Input layer set to 32 to match resolution of the input images. A second Convolutional layer going up to 64 then a pooling layer then a further 2 convolutional layers. Then three fully connected layers. Details in the Jupyter notebook.
+
 
 ## HYPERPARAMETER OPTIMSATION
-Description of which hyperparameters you have and how you chose to optimise them. 
+Took the original LeNet-5 architecture from a face recognition exercise from Imperial College course which quickly got up to 73% accuracy. Then found matching the resolution of the input images for the input layer, Adding a further convolutional layer improved the final result. Last thing in the LeNet-5 was the additional of the ReLU activation function to the pooling layer
+
+Experimented with size of my LeNet-5 network. Started with Input layer either 32 or 64 and then doubling up on the neurons. I found that the smaller network worked better.
+
+For training, I experimented with the SGD vs the Adam optimizer & Epochs. The SGD needed an Epoch of over 1500 to get close to converging and give a good result. However, the Adam only needed somewhere around 500 for Epoch. This was due to a much quicker convergence. However, it is a little sensitive
+
+Batch size on the trainloader utility adjusted to 32 after trying 64 a instead of the original 4 from the face recognition code.
+
 
 ## RESULTS
 ![Screenshot](Results.png)
 ![Screenshot](ConfusionMatrix.png)
 
+Happy to get to over 85% accuracy. If more time spent I think it could go a little higher. Results on the training data were intially 99% and then move up to 100% if the changes decribed above.
 
 ## (CONTACT DETAILS)
 Email: antony_newbold@yahoo.com
