@@ -16,30 +16,30 @@ Example of each classification:
 Clean: ![Screenshot](CleanImage.png)
         Note that even though this image is marked as a clean image or defect free wafer. There is some noise that could make the classification difficult due to being interpreted as random damage.
 
-Centre damage:![Screenshot](CentreImages.png)
+Centre damage:![Screenshot](CentreImage.png)
    Damage is located in the centre of the wafer.
 
-Donut:![Screenshot](DonutImages.png)
+Donut:![Screenshot](DonutImage.png)
    Centre is relatively defect free but area around the centre but not extending right to the edge of the wafer is damaged.
 
 
 
-Edge Localised: ![Screenshot](EdgeLocImages.png)
+Edge Localised: ![Screenshot](EdgeLocImage.png)
    Damage on the left side edge in this example
 
-Edge Ring: ![Screenshot](EdgeRingImages.png)
+Edge Ring: ![Screenshot](EdgeRingImage.png)
    Similair to the previous classification but damage is extended further around the edge of the wafer. Typically, thinner than Edge-Local. Could be mis-interpreted as a scratch
 
-Localised: ![Screenshot](LocalImages.png)
+Localised: ![Screenshot](LocalImage.png)
    Damage is in one particular area. This particular example could easily be mis-interpreted as Centre damage.
 
-Near Full Damage: ![Screenshot](NearFullImages.png)
+Near Full Damage: ![Screenshot](NearFullImage.png)
   Pretty much covered in defects or damage form the manufacturing process. Possible that less pronounced example could be interpreted as some other classification.
 
-Random Damage: ![Screenshot](RandomImages.png)
+Random Damage: ![Screenshot](RandomImage.png)
   Defect all over the wafer. Not in a specific region. However, even though this is classified in the dataset a random there is a pattern here. This could suggest an issue with the manufacturing process causing this damage.
 
-Scratched: ![Screenshot](ScratchImages.png)
+Scratched: ![Screenshot](ScratchImage.png)
       This example has two scratches. 
 
 
